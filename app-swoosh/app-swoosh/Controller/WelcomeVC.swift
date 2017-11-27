@@ -8,15 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
     @IBOutlet weak var swoosh: UIImageView!
     @IBOutlet weak var bgimg: UIImageView!
-    
-    
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -26,10 +21,9 @@ class ViewController: UIViewController {
         
         bgimg.frame = view.frame
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func unwindFromSkillVC(unwindSegue : UIStoryboardSegue){
+        
     }
 
 }
